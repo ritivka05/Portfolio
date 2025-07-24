@@ -1,0 +1,93 @@
+<!-- Same glassmorphic letter style retained -->
+<!-- Added handwritten font to content -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: url("Download\ premium\ vector\ of\ Pink\ paintbrush\ textured\ background\ vector\ by\ Chim\ \ about\ backgrounds\,\ texture\,\ pastel\ backgrounds\,\ pattern\,\ and\ art\ 916944.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .letter-page {
+      width: 95%;
+      max-width: 950px;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 50px;
+      border: 3px solid #e9bebe;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4px);
+      animation: slideUp 0.9s ease-out forwards;
+      transform: translateY(100vh);
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #d85b83;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+    }
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  color: #4b2e36;
+  line-height: 2;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+
+    .next-button {
+      float: right;
+      margin-top: 30px;
+      background: #f4b6c2;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .next-button:hover {
+      background: #de6582;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-page">
+    <h2>Dear Reader,</h2>
+    <p>My name is Sabbina Ritvika, a passionate and dedicated student currently pursuing B.Tech in Information Technology at Shri Vishnu Engineering College for Women. I’ve always believed that learning is most powerful when driven by curiosity — and that's exactly how I’ve approached every subject, project, and challenge.
+    From building web applications to designing user interfaces, I enjoy blending technology with creativity. My interest in full-stack development, combined with a strong eye for aesthetics, has helped me craft projects that are both functional and visually appealing.
+    Beyond academics, I love organizing events, taking leadership roles, and collaborating with others.
+    I'm enthusiastic about learning from experienced professionals and excited to grow in a real-time industry environment.
+    Right now, I’m eagerly looking forward to getting placed in a reputed company where I can apply everything I’ve learned, contribute meaningfully, and continue evolving. I want to be part of a team where I can make a difference, while also learning from every experience that comes my way.</p>
+    <p>This letter-style portfolio is a little glimpse into who I am — creative, hardworking, and hopeful. Thank you for taking the time to read it 💌</p>
+    <p>Sabbina Ritvika</p>
+
+    <button class="next-button" onclick="location.href='projects.html'">Next →</button>
+  </div>
+</body>
+
+</html>

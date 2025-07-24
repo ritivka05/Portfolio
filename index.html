@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Sabbina Ritvika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url("Download\ premium\ vector\ of\ Pink\ paintbrush\ textured\ background\ vector\ by\ Chim\ \ about\ backgrounds\,\ texture\,\ pastel\ backgrounds\,\ pattern\,\ and\ art\ 916944.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .envelope {
+      width: 90vw;
+      max-width: 700px;
+      height: 400px;
+      background: url("download\ \(1\).jpeg") no-repeat center/cover;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      position: relative;
+      cursor: pointer;
+      perspective: 1000px;
+    }
+
+    .flap {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      top: 0;
+      background: rgba(255, 255, 255, 0.3);
+      transform-origin: top;
+      transform: rotateX(0deg);
+      transition: transform 1s ease, background 0.5s ease;
+      z-index: 2;
+    }
+
+    .envelope.opened .flap {
+      transform: rotateX(-180deg);
+      background: rgba(245, 194, 210, 0.9); /* Light pink on open */
+    }
+
+    .message {
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      display: none;
+      z-index: 1;
+    }
+
+    .envelope.opened .message {
+      display: block;
+      animation: fadeIn 1s ease-in;
+    }
+
+.message h2 {
+  color: #d85b83;
+  font-size: 26px;
+}
+
+.message p {
+  font-size: 24px; /* or try 28px for larger text */
+  color: #4b2e36;
+  margin-top: 10px;
+}
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #f4b6c2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background: #de6582;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope" onclick="openLetter()">
+    <div class="flap"></div>
+    <div class="message">
+      <h2>Hi there! 💌</h2>
+      <p>You're holding a special letter full of dreams, skills, and stories...</p>
+      <button class="btn" onclick="goToAbout(event)">Open My Story →</button>
+    </div>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.querySelector('.envelope').classList.add('opened');
+    }
+
+    function goToAbout(e) {
+      e.stopPropagation();
+      window.location.href = "about.html";
+    }
+  </script>
+</body>
+</html>
